@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+
 const MovieCard = ({ title, genre, poster, rating, price, date }) => {
   // Helper function to render stars based on the rating (assumes rating is between 0 and 5)
   const renderStars = () => {
@@ -23,7 +25,7 @@ const MovieCard = ({ title, genre, poster, rating, price, date }) => {
   };
 
   return (
-    <a href="#" className="group relative block bg-black">
+    <a href="/movies/:id" className="group relative block bg-black">
       <img
         alt={title}
         src={poster}

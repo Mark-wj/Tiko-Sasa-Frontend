@@ -24,7 +24,7 @@ const HotelsCard = ({ name, address, price, rating, image }) => {
   };
 
   return (
-    <div className="hover:shadow-black">
+    <div className="transform transition duration-300 hover:scale-105">
       <a
         href="#"
         className="group block w-80 h-96 bg-white shadow-lg overflow-hidden 
